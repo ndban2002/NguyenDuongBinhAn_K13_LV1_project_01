@@ -1,5 +1,5 @@
 #Download Data
-#wget https://raw.githubusercontent.com/yinghaoz1/tmdb-movie-dataset-analysis/master/tmdb-movies.csv
+wget https://raw.githubusercontent.com/yinghaoz1/tmdb-movie-dataset-analysis/master/tmdb-movies.csv
 #Clean Data
 awk -F, 'NF<21' tmdb-movies.csv > unclean_data.csv
 awk -F, 'NF==21' tmdb-movies.csv > clean_data.csv
